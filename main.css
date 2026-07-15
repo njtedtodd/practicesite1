@@ -1,249 +1,175 @@
-/*
-    TXT Core Structural Styles
-    Inspired by HTML5 UP (html5up.net)
-*/
+/* NJ Todd, GMU WebAuthoring, 14 July 2026 */
 
-/* Basic Reset & Typography */
-body {
-    background-color: #f4f4f4;
-    color: #555555;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15pt;
-    font-weight: 300;
-    line-height: 1.75;
-    margin: 0;
-    padding: 0;
-}
+h1 {
+	padding: .2em .5em 1em;
+	}
 
-h1, h2, h3, h4, h5, h6 {
-    color: #444444;
-    font-weight: 700;
-    line-height: 1.25;
-    margin: 0 0 1em 0;
-}
+h2 {
+	padding: .2em;
+	text-align: center;
+	}
 
-a {
-    color: #43b3e0;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-}
+.banner {
+	display: block;
+	margin: auto;
+	width: 80%;
+	}
 
-a:hover {
-    color: #53c3f0;
-}
-
-.bruno-ace-sc-regular {
-  font-family: "Bruno Ace SC", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Layout Wrapper */
-#page-wrapper {
-    overflow-hidden: hidden;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 90%;
-}
-
-/* Header */
-#header {
-    background: #ffffff;
-    padding: 3em 0;
+header.title {
+    position: fixed; 
+    top: 0;        
+    width: 100%;   
+    height: 60px;   
+    background: #333;
+    color: white;
     text-align: center;
-}
+    float: none;
+	}
 
-#header .logo h1 a {
-    color: #444444;
-    font-size: 2.5em;
-    font-weight: 900;
-    letter-spacing: -0.05em;
-}
-
-#header p {
-    color: #999999;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-/* Navigation Menu */
-#nav {
-    background: #252525;
+.footer {
+    position: fixed; 
+    bottom: 0;      
+    width: 100%;    
+    height: 80px;  
+    background-color: #333;
+    color: white;
     text-align: center;
-}
+     }
 
-#nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+#wrapper { 
+	margin: 65px 0 85px 0;
+	}
 
-#nav ul li {
-    display: inline-block;
-}
+article { 
+	float: none;
+	}
 
-#nav ul li a {
-    color: #cccccc;
-    display: block;
-    padding: 1em 1.5em;
-    text-transform: uppercase;
-}
+article p: last-of-type { 
+	padding: 0 0 2em;
+	}
 
-#nav ul li.current a, #nav ul li:hover a {
-    background: #151515;
-    color: #ffffff;
-}
 
-/* Hero Banner */
-#banner {
-    background-color: #444444;
-    color: #ffffff;
-    padding: 6em 0;
-    text-align: center;
-}
+/* Page One Styling */
 
-#banner h2 {
-    color: #ffffff;
-    font-size: 2.25em;
-}
+aside.one {
+		position: fixed;
+		left: 0;
+		width: 150px;
+		padding: 0 .5em;
+	}
 
-/* Buttons */
-.button {
-    background-color: #e5474b;
-    border: 0;
-    border-radius: 4px;
-    color: #ffffff !important;
-    display: inline-block;
-    font-weight: 700;
-    padding: 0.75em 2em;
-    text-align: center;
-    text-transform: uppercase;
-}
+div.PageOneArticle {
+		position: fixed;
+		width: 750px;
+		left: 155px;
+		height:  400px;
+		padding: 0 .2em;
+		overflow: scroll;
+	}
 
-.button:hover {
-    background-color: #f5575b;
-}
+img.body1 {
+	width: 300px;
+	}
 
-/* Content Boxes */
-.box {
-    background: #ffffff;
-    border: solid 1px #e5e5e5;
-    border-radius: 4px;
-    margin-bottom: 2em;
-    padding: 3em;
-}
 
-.box.highlight {
-    text-align: center;
-}
+/* Page Two Styling */
 
-/* Footer */
-#footer {
-    padding: 4em 0;
-    text-align: center;
-    font-family: "Bruno Ace SC", sans-serif;
-    font-size: 0.9em;
-    color: #999999;
-}
+aside.two {
+	float: left;
+	min-width: 125px;
+	}
 
-#footer ul {
-    list-style: none;
-    padding: 0;
-}
+div.PageTwoArticle {
+	min-height: 500px;
+	min-width: 300px;
+	padding: 0 30px;
+	overflow: scroll;
+	}
 
-#footer ul li {
-    display: inline-block;
-    margin-left: 1em;
-    padding-left: 1em;
-    border-left: solid 1px #e5e5e5;
-}
+.leftPageTwo {
+	float: left;
+	margin: 10px 35px 10px 0px;
+	width: 170px;
+	}
 
-#footer ul li:first-child {
-    border-left: 0;
-    margin-left: 0;
-    padding-left: 0;
-}
+.rightPageTwo {
+	float: right;
+	margin: 10px 35px 10px 0px;
+	width: 170px;
+	}
+	
+/* Page Three Styling */
 
-/* Sidebar Typography and Spacing */
-#sidebar h2 {
-    font-size: 1.5em;
-    color: var(--title-color);
-    margin-bottom: 0.8em;
-    border-bottom: solid 1px #e5e5e5;
-    padding-bottom: 0.5em;
-}
+aside.three {
+	float: left;
+	min-width: 125px;
+	}
 
-ul.style2 {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1.5em 0;
-}
+div.PageThreeArticle {
+	min-height: 500px;
+	min-width: 300px;
+	padding: 0 2em;
+	overflow: scroll;
+	}
 
-ul.style2 li {
-    border-top: solid 1px #e5e5e5;
-    padding: 0.5em 0;
-}
+.leftPageThree {
+	float: left;
+	margin: 1em 2em 1em 0;
+	width: 25%;
+	}
 
-ul.style2 li:first-child {
-    border-top: 0;
-    padding-top: 0;
-}
+.rightPageThree {
+	float: right;
+	margin: 1em 0em 1em 2em;
+	width: 25%;
+	}	
 
-ul.style2 li a {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
+/* Page Four Styling */
 
-ul.style2 li a:hover {
-    color: var(--accent-color);
-}
+aside.four {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	min-width: 125px;
+	}
 
-/* Secondary Button Variant */
-.button.alt {
-    background: transparent;
-    box-shadow: inset 0 0 0 2px var(--text-color);
-    color: var(--text-color) !important;
-}
+div.PageFourArticle {
+	display: inline-block;
+	vertical-align: top;
+	min-height: 500px;
+	min-width: 300px;
+	padding: 0 2em;
+	overflow: scroll;
+	}
 
-.button.alt:hover {
-    background: rgba(0,0,0,0.05);
-}
+.leftPageFour {
+	float: left;
+	margin: 1em 2em 1em 0;
+	width: 25%;
+	}
 
-/* Content Area Header formatting */
-#content .major h2 {
-    font-size: 2.25em;
-    color: var(--title-color);
-    margin-bottom: 0.25em;
-}
+.rightPageFour {
+	float: right;
+	margin: 1em 0em 1em 2em;
+	width: 25%;
+	}	
+		
+/* Page Five Gallery */
 
-/* Column Width rules for 2-column configurations */
-.col-8 {
-    flex: 0 0 66.666%;
-    max-width: 66.666%;
-    padding: 20px;
-    box-sizing: border-box;
-}
+img.five {
+  float: left;
+  width: 20%;
+  height: 30vh;
+  }
 
-/* Image blocks responsive styling */
-.image.featured {
-    display: block;
-    width: 100%;
-    margin: 0 0 2em 0;
-}
 
-.image.featured img {
-    width: 100%;
-    border-radius: 4px;
-}
+.objcov {
+	object-fit: cover;
+	}
 
-/* Mobile Media Queries update for multi-column collapse */
-@media screen and (max-width: 980px) {
-    .col-8 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
+.objpos {
+	object-fit: none;
+	object-position: 30%;
+	height: 100px;
+	}
+

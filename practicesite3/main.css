@@ -1,0 +1,249 @@
+/*
+    TXT Core Structural Styles
+    Inspired by HTML5 UP (html5up.net)
+*/
+
+/* Basic Reset & Typography */
+body {
+    background-color: #f4f4f4;
+    color: #555555;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15pt;
+    font-weight: 300;
+    line-height: 1.75;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 1em 0;
+}
+
+a {
+    color: #43b3e0;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #53c3f0;
+}
+
+.bruno-ace-sc-regular {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Layout Wrapper */
+#page-wrapper {
+    overflow-hidden: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+/* Header */
+#header {
+    background: #ffffff;
+    padding: 3em 0;
+    text-align: center;
+}
+
+#header .logo h1 a {
+    color: #444444;
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+}
+
+#header p {
+    color: #999999;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Navigation Menu */
+#nav {
+    background: #252525;
+    text-align: center;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+}
+
+#nav ul li a {
+    color: #cccccc;
+    display: block;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+}
+
+#nav ul li.current a, #nav ul li:hover a {
+    background: #151515;
+    color: #ffffff;
+}
+
+/* Hero Banner */
+#banner {
+    background-color: #444444;
+    color: #ffffff;
+    padding: 6em 0;
+    text-align: center;
+}
+
+#banner h2 {
+    color: #ffffff;
+    font-size: 2.25em;
+}
+
+/* Buttons */
+.button {
+    background-color: #e5474b;
+    border: 0;
+    border-radius: 4px;
+    color: #ffffff !important;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.75em 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #f5575b;
+}
+
+/* Content Boxes */
+.box {
+    background: #ffffff;
+    border: solid 1px #e5e5e5;
+    border-radius: 4px;
+    margin-bottom: 2em;
+    padding: 3em;
+}
+
+.box.highlight {
+    text-align: center;
+}
+
+/* Footer */
+#footer {
+    padding: 4em 0;
+    text-align: center;
+    font-family: "Bruno Ace SC", sans-serif;
+    font-size: 0.9em;
+    color: #999999;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer ul li {
+    display: inline-block;
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: solid 1px #e5e5e5;
+}
+
+#footer ul li:first-child {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Sidebar Typography and Spacing */
+#sidebar h2 {
+    font-size: 1.5em;
+    color: var(--title-color);
+    margin-bottom: 0.8em;
+    border-bottom: solid 1px #e5e5e5;
+    padding-bottom: 0.5em;
+}
+
+ul.style2 {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5em 0;
+}
+
+ul.style2 li {
+    border-top: solid 1px #e5e5e5;
+    padding: 0.5em 0;
+}
+
+ul.style2 li:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+ul.style2 li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+ul.style2 li a:hover {
+    color: var(--accent-color);
+}
+
+/* Secondary Button Variant */
+.button.alt {
+    background: transparent;
+    box-shadow: inset 0 0 0 2px var(--text-color);
+    color: var(--text-color) !important;
+}
+
+.button.alt:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+/* Content Area Header formatting */
+#content .major h2 {
+    font-size: 2.25em;
+    color: var(--title-color);
+    margin-bottom: 0.25em;
+}
+
+/* Column Width rules for 2-column configurations */
+.col-8 {
+    flex: 0 0 66.666%;
+    max-width: 66.666%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Image blocks responsive styling */
+.image.featured {
+    display: block;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+.image.featured img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Mobile Media Queries update for multi-column collapse */
+@media screen and (max-width: 980px) {
+    .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

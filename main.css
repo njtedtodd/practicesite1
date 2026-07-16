@@ -155,6 +155,7 @@ div.PageFourArticle {
 	}	
 		
 /* Page Five Gallery */
+/* Gemini code fix
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
@@ -180,7 +181,7 @@ img.five {
 .objpos img {
     object-fit: none;
     object-position: 30% center;
-}
+} */
 
 /* Old unfixed code
 img.five {
@@ -197,6 +198,34 @@ img.five {
 .objpos {
 	object-fit: none;
 	object-position: 30%;
-	height: 100px; */
-	}
+	height: 100px; 
+	}*/
+	
+.gallery-container {
+    display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 10px 0;
+        }
+        
+.gallery-item {
+    flex: 1 1 calc(20% -5px;
+    box-sizing: border-box;
+    }
+    
+img.five {
+    display: block;
+    width: 100%;
+    height: 200px;
+    }
+    
+.objcov img {
+    object-fit: cover;
+    }
+    
+.objpos img {
+    object-fit: none;
+    object-position: 20% center;
+    }
+
 
